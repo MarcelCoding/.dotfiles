@@ -1,3 +1,4 @@
+
 alias "docker-start"="sudo systemctl start docker"
 alias "docker-stop"="sudo systemctl stop docker && sudo systemctl stop docker.socket && sudo systemctl stop containerd"
 alias "dive"="sudo docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest"
@@ -7,6 +8,9 @@ alias "docker-compose"="sudo docker-compose"
 alias "dc"="sudo docker-compose"
 
 alias "ls"="exa"
+alias ..='cd ..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
 
 git() {
   case $* in
@@ -18,3 +22,5 @@ git() {
     * ) command git "$@" ;;
   esac
 }
+
+alias "sudo"="sudo"
