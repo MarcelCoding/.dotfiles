@@ -1,0 +1,16 @@
+[user]
+	name = Marcel
+	email = 34819524+MarcelCoding@users.noreply.github.com
+	signingkey = 34819524+MarcelCoding@users.noreply.github.com
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgSign = true
+
+[core]
+	autocrlf = input
+
+[init]
+	defaultBranch = main
